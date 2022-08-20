@@ -14,7 +14,7 @@ function TrackTile(props) {
         <p className="track-tile__city">{props.city}</p>
       </div>
       <div className="track-tile__buttons-container">
-        <PlayButton />
+        <PlayButton title={props.title} author={props.author} />
         <AddButton />
       </div>
     </div>

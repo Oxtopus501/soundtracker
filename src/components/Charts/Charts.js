@@ -1,3 +1,10 @@
+import React, { useRef } from "react";
+
+import { observer } from "mobx-react-lite";
+
+import ApiStore from "../../store/ApiStore/ApiStore";
+import { cityStore } from "../../store/CityStore/instance";
+import TrackListStore from "../../store/TrackListStore/TrackListStore";
 import SearchButton from "../SearchButton/SearchButton";
 import SearchIcon from "../SearchIcon/SearchIcon";
 import SelectPlace from "../SelectPlace/SelectPlace";
@@ -5,27 +12,12 @@ import TrackTile from "../TrackTile/TrackTile";
 import "./Charts.css";
 
 function Charts() {
-  function getChart(listId) {
-    fetch(
-      `https://shazam.p.rapidapi.com/charts/track?locale=en-US&listId=${listId}&pageSize=20&startFrom=0`,
-      {
-        method: "GET",
-        headers: {
-          "x-rapidapi-host": "shazam.p.rapidapi.com",
-          "x-rapidapi-key":
-            "ee2ab30195msh36c4dde5ff52590p100112jsnb138dae00782",
-        },
-      }
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        // eslint-disable-next-line no-console
-        console.log(data);
-      });
-  }
+  const trackListStoreRef = useRef(new TrackListStore());
+  const trackListStore = trackListStoreRef.current;
 
   const handleClickSearch = () => {
-    getChart("ip-city-chart-524901");
+    trackListStore.getChart(cityStore.cityId);
+    cityStore.setCityName(cityStore.cityId);
   };
 
   return (
@@ -34,7 +26,7 @@ function Charts() {
         <SelectPlace />
         <SearchButton children={<SearchIcon />} onClick={handleClickSearch} />
       </div>
-      <TrackTile
+      {/*<TrackTile
         title={"Scavenger"}
         place={1}
         author={"Killradio"}
@@ -57,9 +49,22 @@ function Charts() {
         place={4}
         author={"Очень длинное название музыкальной группы"}
         city={"Kolomna"}
-      />
+      />*/}
+      {trackListStore.trackList
+        ? trackListStore.trackList.map((track, index) => {
+            return (
+              <TrackTile
+                key={track.key}
+                title={track.title}
+                place={index + 1}
+                author={track.subtitle}
+                city={cityStore.cityName}
+              />
+            );
+          })
+        : null}
     </>
   );
 }
 
-export default Charts;
+export default observer(Charts);
