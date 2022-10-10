@@ -14,7 +14,9 @@ function SelectPlace() {
   return (
     <select className="select-place" onChange={handleChange}>
       {idListArray.map((city) => (
-        <option value={city.id}>{city.label}</option>
+        <option key={city.value} value={city.id}>
+          {city.label}
+        </option>
       ))}
     </select>
   );

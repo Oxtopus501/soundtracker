@@ -3,3 +3,8 @@
   background-color: #362752;
   min-height: 100vh;
 }
+
+.wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+}

@@ -1,19 +1,25 @@
 const idListArray = [
   {
+    label: "Алматы",
+    value: "almaty",
+    id: "ip-city-chart-1526384",
+  },
+  {
     label: "Москва",
     value: "moscow",
     id: "ip-city-chart-524901",
-  },
-  {
-    label: "Санкт-Петербург",
-    value: "saintPetersburg",
-    id: "ip-city-chart-498817",
   },
   {
     label: "Киев",
     value: "kyiv",
     id: "ip-city-chart-703448",
   },
+  {
+    label: "Санкт-Петербург",
+    value: "saintPetersburg",
+    id: "ip-city-chart-498817",
+  },
+
   {
     label: "Лондон",
     value: "london",

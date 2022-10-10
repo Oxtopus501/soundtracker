@@ -4,7 +4,13 @@
   border-radius: 4px;
   color: #fff;
   height: 40px;
-  width: 120px;
+  width: 200px;
   position: relative;
   top: -1px;
+  padding: 0 0 2px 4px;
+}
+
+.select-place:hover {
+  cursor: pointer;
+  color: #fff700;
 }

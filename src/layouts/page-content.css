@@ -1,12 +1,22 @@
 .page-content {
-  margin: 0 32px;
+  margin: 0 auto;
+  max-width: 480px;
 }
 
 .page-content__text {
   color: #fff;
   max-width: 420px;
   line-height: 32px;
-  font-size: 24px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.page-content__paragraph {
+  margin: 0 0 12px 0;
+}
+
+.page-content__colored-text {
+  color: #fff700;
 }
 
 @media screen and (max-width: 479px) {
@@ -17,7 +27,7 @@
   .page-content__text {
     color: #fff;
     line-height: 28px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 12px 0;
   }
 }

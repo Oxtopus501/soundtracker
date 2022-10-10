@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { observer } from "mobx-react-lite";
 
@@ -19,6 +19,10 @@ function Charts() {
     trackListStore.getChart(cityStore.cityId);
     cityStore.setCityName(cityStore.cityId);
   };
+
+  useEffect(() => {
+    cityStore.setCityId("ip-city-chart-1526384");
+  }, []);
 
   return (
     <>
