@@ -90,8 +90,8 @@
 
 @media screen and (max-width: 479px) {
   .track-tile {
-    width: 280px;
-    grid-template-columns: 40px 152px 88px;
+    width: 296px;
+    grid-template-columns: 40px 168px 88px;
     padding: 8px;
   }
 
@@ -104,5 +104,11 @@
   .track-tile__text-container {
     margin-left: 8px;
     font-size: 14px;
+  }
+
+  .track-tile__title {
+    overflow: initial;
+    text-overflow: initial;
+    display: initial;
   }
 }
