@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/soundtracker/static/css/main.14d90872.chunk.css",
+    "main.js": "/soundtracker/static/js/main.ab1d3e51.chunk.js",
+    "main.js.map": "/soundtracker/static/js/main.ab1d3e51.chunk.js.map",
+    "runtime-main.js": "/soundtracker/static/js/runtime-main.26e4ea72.js",
+    "runtime-main.js.map": "/soundtracker/static/js/runtime-main.26e4ea72.js.map",
+    "static/js/2.b4cfeffc.chunk.js": "/soundtracker/static/js/2.b4cfeffc.chunk.js",
+    "static/js/2.b4cfeffc.chunk.js.map": "/soundtracker/static/js/2.b4cfeffc.chunk.js.map",
+    "index.html": "/soundtracker/index.html",
+    "static/css/main.14d90872.chunk.css.map": "/soundtracker/static/css/main.14d90872.chunk.css.map",
+    "static/js/2.b4cfeffc.chunk.js.LICENSE.txt": "/soundtracker/static/js/2.b4cfeffc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26e4ea72.js",
+    "static/js/2.b4cfeffc.chunk.js",
+    "static/css/main.14d90872.chunk.css",
+    "static/js/main.ab1d3e51.chunk.js"
+  ]
+}
