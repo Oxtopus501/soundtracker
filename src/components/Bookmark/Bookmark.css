@@ -1,15 +1,14 @@
 .bookmark {
-  border-radius: 10px;
+  border-radius: 4px;
   height: 40px;
-  max-width: 200px;
-  width: 48%;
+  /* max-width: 200px; */
+  width: 49%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #221934;
   color: #fff;
-  margin-right: 4px;
   border: none;
   padding: 0 12px;
 }

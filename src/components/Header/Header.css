@@ -27,6 +27,7 @@
   width: 480px;
   display: flex;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 479px) {

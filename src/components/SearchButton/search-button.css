@@ -4,10 +4,21 @@
   border-radius: 4px;
   height: 40px;
   width: 40px;
-  margin-left: 8px;
+  /* margin-left: 8px; */
+  display: flex;
+  width: 49%;
+  align-items: center;
+  color: #fff;
+  padding: 0 12px 0 12px;
+  box-sizing: border-box;
+}
+
+.search-button__text {
+  margin-left: 20px;
 }
 
 .search-button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 16px #fff700;
+  color: #fff700
 }

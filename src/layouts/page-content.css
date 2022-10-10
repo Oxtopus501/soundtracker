@@ -5,7 +5,7 @@
 
 .page-content__text {
   color: #fff;
-  max-width: 420px;
+  /* max-width: 420px; */
   line-height: 32px;
   font-size: 20px;
   margin: 20px 0;
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 479px) {
   .page-content {
-    margin: 0 12px;
+    margin: 0 4px;
   }
 
   .page-content__text {

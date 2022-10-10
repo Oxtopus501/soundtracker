@@ -1,6 +1,6 @@
 .bookmarks {
   display: flex;
   margin-bottom: 16px;
-  width: 420px;
+  /* width: 420px; */
   justify-content: space-between;
 }
