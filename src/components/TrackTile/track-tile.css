@@ -90,9 +90,10 @@
 
 @media screen and (max-width: 479px) {
   .track-tile {
-    width: 296px;
-    grid-template-columns: 40px 168px 88px;
+    width: 100% - 8px;
+    /* grid-template-columns: 40px 168px 88px; */
     padding: 8px;
+    grid-template-columns: 60px 1fr 88px;
   }
 
   .track-tile__place {
@@ -103,12 +104,21 @@
 
   .track-tile__text-container {
     margin-left: 8px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .track-tile__title {
-    overflow: initial;
+    /* overflow: initial;
     text-overflow: initial;
     display: initial;
+    overflow: hidden; */
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    box-orient: vertical;
   }
 }
