@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soundtracker/static/css/main.181f8971.chunk.css",
+    "main.css": "/soundtracker/static/css/main.161f18ed.chunk.css",
     "main.js": "/soundtracker/static/js/main.a3617566.chunk.js",
     "main.js.map": "/soundtracker/static/js/main.a3617566.chunk.js.map",
     "runtime-main.js": "/soundtracker/static/js/runtime-main.26e4ea72.js",
@@ -8,13 +8,13 @@
     "static/js/2.b4cfeffc.chunk.js": "/soundtracker/static/js/2.b4cfeffc.chunk.js",
     "static/js/2.b4cfeffc.chunk.js.map": "/soundtracker/static/js/2.b4cfeffc.chunk.js.map",
     "index.html": "/soundtracker/index.html",
-    "static/css/main.181f8971.chunk.css.map": "/soundtracker/static/css/main.181f8971.chunk.css.map",
+    "static/css/main.161f18ed.chunk.css.map": "/soundtracker/static/css/main.161f18ed.chunk.css.map",
     "static/js/2.b4cfeffc.chunk.js.LICENSE.txt": "/soundtracker/static/js/2.b4cfeffc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.26e4ea72.js",
     "static/js/2.b4cfeffc.chunk.js",
-    "static/css/main.181f8971.chunk.css",
+    "static/css/main.161f18ed.chunk.css",
     "static/js/main.a3617566.chunk.js"
   ]
 }
